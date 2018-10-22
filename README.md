@@ -2,7 +2,7 @@
 
 # How to use it
 
-```
+```javascript
 var Handler = function(text)
 
     {
