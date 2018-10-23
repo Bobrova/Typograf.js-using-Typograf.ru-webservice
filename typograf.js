@@ -2,13 +2,14 @@
 
     "use strict";
 
-  function textTypography(text,Handler){
+  function textTypography(text,r_handler){
 
     if (validateText(text)){
-      getText(text,Handler);
+      getText(text,r_handler);
     }
     else{
-      alert('ошибка');
+      var err = 'Invalid argument type. Must be string';
+      r_handler(text,err);
     }
   }
 
@@ -25,18 +26,14 @@ function getText(text,r_handler){
           r_handler(request.responseText);
         }
         else {
-          r_handler('error');
+          r_handler(text,'Server error:' + request.status);
         }
       }
     }
     request.send(body);
 
-    var xhrTimeout = setTimeout( function(){ request.abort(); handleError("Timeout") }, 10000);
+    var xhrTimeout = setTimeout( function(){request.abort(); r_handler(text,"Timeout") }, 10000);
 
-    function handleError(message) {
-      // обработчик ошибки
-      alert("Ошибка: "+message);
-    }
   }
 
   function validateText(text){
