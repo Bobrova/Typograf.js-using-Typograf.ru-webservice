@@ -1,5 +1,5 @@
 {
-  "name": "typograf.js_using_typograf.ru-webservice",
+  "name": "typograf-api",
   "version": "1.0.0",
   "description": "Typography of text  with the help of the Typograf.ru's API (Russian language)",
   "main": "typograf.js",
