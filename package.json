@@ -1,0 +1,19 @@
+{
+  "name": "typograf.js_using_typograf.ru-webservice",
+  "version": "1.0.0",
+  "description": "Typography of text  with the help of the Typograf.ru's API (Russian language)",
+  "main": "typograf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bobrova/Typograf.js_using_Typograf.ru-webservice.git"
+  },
+  "author": "Nastya Bobrova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bobrova/Typograf.js_using_Typograf.ru-webservice/issues"
+  },
+  "homepage": "https://github.com/Bobrova/Typograf.js_using_Typograf.ru-webservice#readme"
+}
