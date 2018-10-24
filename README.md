@@ -1,5 +1,5 @@
 # Typograf-api
-Типографирование текста с использованием веб-сервиса сайта Typograf.ru
+Typography of the text using the web service Typograf.ru
 ## Installation
 ```
 npm install typograf-api
@@ -22,4 +22,5 @@ var Handler = function(text,err)
     textTypography(str,Handler);
 
 ```
-В случае ошибки возвратится тот же текст. Информацию о произошедшей ошибке можно получить из второго аргумента обработчика.
+In case of an error, the same text will be returned. Information about the error that occurred can be obtained from the second argument of
+the handler.
